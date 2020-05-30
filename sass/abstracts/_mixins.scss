@@ -1,0 +1,51 @@
+@mixin imagejpg($bg){
+    background: {
+        image: url("../img/#{$bg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagepng($bg){
+    background: {
+        image: url("../img/#{$bg}.png");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin gridimage($gbg){
+    background: {
+        image: url("/img/grid\ images/#{$gbg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagejpg-fadeblue($fbg){
+    background: {
+        image: linear-gradient($blue-trans, $blue-trans), url("../img/#{$fbg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagejpg-fade($fbg){
+    background: {
+        image: linear-gradient($overlay, $overlay), url("../img/#{$fbg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagejpg-fadewhite($fbg){
+    background: {
+        image: linear-gradient($white-trans, $white-trans), url("../img/#{$fbg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+
+
+

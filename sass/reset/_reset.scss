@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+
+// ENABLE AND CHANGE THE FOCUS COLORS DEPENDING ON YOUR DESIGN
+
+// :focus{
+//     outline: 3px solid rgb(132, 130, 255);
+//     outline-offset: 3px;
+// }
+
+
+// ENABLE THIS OUTLINE FOR DEBUGGING PURPOSES, E.G. HORIZONTAL SCROLLING
+
+// *{
+//     outline: 2px solid red;
+// }

@@ -1,18 +1,30 @@
+header{
+
+    .logo-container{
+        
+        display: flex;
+        justify-content: center;
+        margin: 70px 0;
+
+        .logo{
+            width: 200px;
+        }
+    }
+}
+
 nav{
 
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 
     //Unordered list - "ul"
-    .nav-items{
+    .nav-list{
 
         display: flex;
         justify-content: space-between;
         width: 95%;
-        max-width: 800px;
-        margin: 0 auto;
+        max-width: 700px;
+        margin: 0 auto 70px;
         
-        background: red;
-
         //list items - "li"
         .nav-item{
             list-style: none;

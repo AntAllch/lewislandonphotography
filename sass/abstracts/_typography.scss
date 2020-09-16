@@ -8,5 +8,12 @@
 // }
 
 nav{
-    font-family: $ff-nav;
+    font-family: $ff-secondary;
 }
+
+.title{
+    font-family: $ff-primary;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+

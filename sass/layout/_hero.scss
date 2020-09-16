@@ -1,0 +1,32 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 70vh;
+
+    .hero-img-container{
+        width: 24.5%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-1{
+        background-image: url("/img/groom.jpg");
+        // background-color: red;
+    }
+
+    .hero-2{
+        background-image: url("/img/low-angle-building.jpg");
+        // background-color: pink;
+    }
+
+    .hero-3{
+        background-image: url("/img/lake-trees.jpg");
+        // background-color: red;
+    }
+
+    .hero-4{
+        background-image: url("/img/reindeer.jpg");
+        // background-color: pink;
+    }
+}

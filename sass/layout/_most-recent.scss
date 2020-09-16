@@ -1,0 +1,12 @@
+.most-recent{
+
+    margin: 70px 0;
+
+    .most-recent-img{
+        @include imagejpg(grass-proposal);
+        // background-image: url("/img/grass-proposal.jpg");
+        width: 50%;
+        height: 40vh;
+    }
+
+}

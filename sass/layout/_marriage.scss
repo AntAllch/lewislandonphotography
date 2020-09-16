@@ -1,0 +1,17 @@
+.marriage{
+
+    margin: 70px 0;
+
+    .marriage-img{
+        @include imagejpg(couple-kiss);
+        width: 50%;
+        height: 70vh;
+    }
+
+    .wedding-rings{
+        @include imagejpg(bw-rings);
+        width: 40%;
+        height: 50vh;
+    }
+
+}

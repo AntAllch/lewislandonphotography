@@ -21,7 +21,11 @@ hr {
   margin: 0 auto;
 }
 
-nav {
+nav,
+.copyright,
+.footer-text,
+.sub-text,
+.sub-link {
   font-family: "raleway", sans-serif;
 }
 

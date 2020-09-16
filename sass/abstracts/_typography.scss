@@ -7,7 +7,11 @@
 //     font-family: $ff-primary;
 // }
 
-nav{
+nav,
+.copyright,
+.footer-text,
+.sub-text,
+.sub-link{
     font-family: $ff-secondary;
 }
 

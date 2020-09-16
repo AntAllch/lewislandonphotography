@@ -3,12 +3,14 @@
 *::after{
     margin: 0;
     padding: 0;
-}
-
-body{
     box-sizing: border-box;
 }
 
+// THE FONT SIZE IS SET TO THIS SO IT CHANGES THE TEXT SIZE FROM 16PX TO 10PX, SO WE CAN USE REM WITHOUT
+// HAVING TO CONVERT PIXELS TO REM, E.G. 2.1REM NOW CHANGES TO 2.1PX
+html{
+    font-size: 62.5%;
+}
 
 // ENABLE AND CHANGE THE FOCUS COLORS DEPENDING ON YOUR DESIGN
 

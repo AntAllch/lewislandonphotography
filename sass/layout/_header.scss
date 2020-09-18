@@ -36,7 +36,8 @@ nav{
             text-decoration: none;
             transition: color 0.15s ease-in-out;
 
-            &:hover{
+            &:hover,
+            &:focus{
                 color: $gold;
             }
         }

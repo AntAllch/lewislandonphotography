@@ -62,7 +62,7 @@ nav .nav-list .nav-link {
   text-decoration: none;
   transition: color 0.15s ease-in-out;
 }
-nav .nav-list .nav-link:hover {
+nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
   color: #D4AF37;
 }
 

@@ -1,6 +1,8 @@
 .capture{
-
-    margin: 70px 0;
+    text-align: center;
+    margin: 70px auto;
+    // width: 90%;
+    background: lightblue;
 
     .vertical-line{
         background-color: rgba(0, 0, 0, 0.5);
@@ -9,4 +11,22 @@
         margin: 0 auto 20px;
     }
 
+    .title{
+        width: 80%;
+        max-width: 600px;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 1em auto;
+        background: pink;
+        letter-spacing: 1rem;
+    }
+
+
+    .sub-text{
+        width: 85%;
+        max-width: 340px;
+    }
+
+    
 }
+

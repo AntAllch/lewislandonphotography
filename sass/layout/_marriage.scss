@@ -1,16 +1,18 @@
 .marriage{
 
-    margin: 70px 0;
+    background-color: teal;
+    margin: 70px auto;
+    width: 85%;
 
     .marriage-img{
         @include imagejpg(couple-kiss);
-        width: 50%;
+        // width: 100%;
         height: 70vh;
     }
 
     .wedding-rings{
         @include imagejpg(bw-rings);
-        width: 40%;
+        // width: 40%;
         height: 50vh;
     }
 

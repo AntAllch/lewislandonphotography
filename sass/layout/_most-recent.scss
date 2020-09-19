@@ -1,12 +1,33 @@
 .most-recent{
 
     margin: 70px 0;
+    background-color: burlywood;
+    text-align: center;
+
+    .most-recent-info{
+        width: 85%;
+        margin: 0 auto;
+        background-color: palegreen;
+
+        .sub-text{
+            // margin-bottom: 1em;
+        }
+
+        .sub-link{
+            display: inline-block;
+            text-decoration: none;
+            font-family: $ff-primary;
+            color: $accent;
+            letter-spacing: 1px;
+            margin: 1em 0;
+        }
+    }
 
     .most-recent-img{
         @include imagejpg(grass-proposal);
-        // background-image: url("/img/grass-proposal.jpg");
-        width: 50%;
+        width: 85%;
         height: 40vh;
+        margin: 0 auto;
     }
 
 }

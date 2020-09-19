@@ -1,32 +1,39 @@
 .hero{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "top-left top-right"
+                         "bottom-left bottom-right";
     width: 100vw;
-    height: 70vh;
+    height: 40vh;
+    background-color: aquamarine;
+    margin: 0 0 70px 0;
 
     .hero-img-container{
-        width: 24.5%;
+        // width: 24.5%;
         background-position: center;
         background-size: cover;
     }
 
     .hero-1{
         background-image: url("/img/groom.jpg");
+        grid-area: top-left;
         // background-color: red;
     }
 
     .hero-2{
         background-image: url("/img/low-angle-building.jpg");
+        grid-area: top-right;
         // background-color: pink;
     }
 
     .hero-3{
         background-image: url("/img/lake-trees.jpg");
+        grid-area: bottom-left;
         // background-color: red;
     }
 
     .hero-4{
         background-image: url("/img/reindeer.jpg");
+        grid-area: bottom-right;
         // background-color: pink;
     }
 }

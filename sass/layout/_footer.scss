@@ -1,6 +1,33 @@
 footer{
+    text-align: center;
+    padding: 4rem;
+    background-color: $light-grey;
+
     .footer-logo{
         width: 150px;
+        margin-bottom: 2em;
+    }
+
+    //The unordered list item - "ul"
+    .social-links{
+        display: flex;
+        justify-content: space-around;
+        margin: 2em auto;
+        width: 50%;
+        background-color: palegoldenrod;
+
+        //The list item - "li"
+        .social-item{
+            list-style: none;
+
+            //The anchor tag - "a"
+            .social-link{
+                font-size: 2em;
+                color: black;
+            }
+        }
+
+        
     }
     
     .copyright{

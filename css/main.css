@@ -3,231 +3,275 @@
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 hr {
   border: 0;
   height: 1px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-  margin: 0 10px; }
+  margin: 0 10px;
+}
 
 .container {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-nav,
 .copyright,
 .footer-text,
 .sub-text,
-.sub-link {
-  font-family: "raleway", sans-serif; }
+.sub-link,
+nav {
+  font-family: "Raleway", sans-serif;
+}
 
 .title {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display";
   text-transform: uppercase;
   font-weight: 300;
   margin: 1em auto;
   background: pink;
-  letter-spacing: 1rem; }
+  letter-spacing: 1rem;
+}
 
 .subtitle {
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Playfair Display";
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 300;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 .sub-text {
   background: yellow;
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0 auto;
-  line-height: 1.8; }
+  line-height: 1.8;
+}
 
 header .logo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  margin: 70px 0; }
-  header .logo-container .logo {
-    width: 200px; }
+  margin: 30px 0;
+}
+header .logo-container .logo {
+  width: 200px;
+}
 
 nav {
-  font-size: 1.4rem; }
-  nav .nav-list {
-    width: 95%;
-    max-width: 700px;
-    margin: 0 auto 70px; }
-    nav .nav-list .nav-item {
-      list-style: none; }
-    nav .nav-list .nav-link {
-      color: #000;
-      text-decoration: none;
-      -webkit-transition: color 0.15s ease-in-out;
-      -o-transition: color 0.15s ease-in-out;
-      transition: color 0.15s ease-in-out; }
-      nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
-        color: #D4AF37; }
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 400;
+}
+nav .nav-list {
+  width: 95%;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+nav .nav-list .nav-item {
+  list-style: none;
+}
+nav .nav-list .nav-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
+  color: #D4AF37;
+}
 
 .hero {
-  display: -ms-grid;
   display: grid;
-  grid-template-areas: "top-left top-right" "bottom-left bottom-right";
+  grid-template-areas: "top-left top-right" "bottom-left bottom-right";
   width: 100vw;
   height: 40vh;
   background-color: aquamarine;
-  margin: 0 0 70px 0; }
-  .hero .hero-img-container {
-    background-position: center;
-    background-size: cover; }
-  .hero .hero-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    background-image: url("/img/groom.jpg");
-    grid-area: top-left; }
-  .hero .hero-2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    background-image: url("/img/low-angle-building.jpg");
-    grid-area: top-right; }
-  .hero .hero-3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    background-image: url("/img/lake-trees.jpg");
-    grid-area: bottom-left; }
-  .hero .hero-4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    background-image: url("/img/reindeer.jpg");
-    grid-area: bottom-right; }
+  margin: 0 0 70px 0;
+}
+.hero .hero-img-container {
+  background-position: center;
+  background-size: cover;
+}
+.hero .hero-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-image: url("/img/groom.jpg");
+  grid-area: top-left;
+}
+.hero .hero-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-image: url("/img/low-angle-building.jpg");
+  grid-area: top-right;
+}
+.hero .hero-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  background-image: url("/img/lake-trees.jpg");
+  grid-area: bottom-left;
+}
+.hero .hero-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  background-image: url("/img/reindeer.jpg");
+  grid-area: bottom-right;
+}
 
 .mini-desc {
   background-color: cadetblue;
   text-align: center;
   width: 85%;
   max-width: 475px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .most-recent {
   margin: 70px 0;
   background-color: burlywood;
-  text-align: center; }
-  .most-recent .most-recent-info {
-    width: 85%;
-    margin: 0 auto;
-    background-color: palegreen; }
-    .most-recent .most-recent-info .sub-link {
-      display: inline-block;
-      text-decoration: none;
-      font-family: "Playfair Display", sans-serif;
-      color: #D4AF37;
-      letter-spacing: 1px;
-      margin: 1em 0; }
-  .most-recent .most-recent-img {
-    background-image: url("../img/grass-proposal.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 85%;
-    height: 40vh;
-    margin: 0 auto; }
+  text-align: center;
+}
+.most-recent .most-recent-info {
+  width: 85%;
+  margin: 0 auto;
+  background-color: palegreen;
+}
+.most-recent .most-recent-info .sub-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Playfair Display";
+  color: #D4AF37;
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
+.most-recent .most-recent-img {
+  background-image: url("../img/grass-proposal.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 85%;
+  height: 40vh;
+  margin: 0 auto;
+}
 
 .marriage {
   background-color: teal;
   margin: 70px auto;
-  width: 85%; }
-  .marriage .marriage-img {
-    background-image: url("../img/couple-kiss.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 70vh; }
-  .marriage .wedding-rings {
-    background-image: url("../img/bw-rings.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 50vh; }
+  width: 85%;
+  text-align: center;
+}
+.marriage .marriage-img {
+  background-image: url("../img/couple-kiss.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+.marriage .wedding-rings {
+  background-image: url("../img/bw-rings.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15vh;
+  display: none;
+}
+.marriage .sub-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #D4AF37;
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
 
 .capture {
   text-align: center;
   margin: 70px auto;
-  background: lightblue; }
-  .capture .vertical-line {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 1px;
-    height: 50px;
-    margin: 0 auto 20px; }
-  .capture .title {
-    width: 80%;
-    max-width: 600px;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 1em auto;
-    background: pink;
-    letter-spacing: 1rem; }
-  .capture .sub-text {
-    width: 85%;
-    max-width: 340px; }
+  background: lightblue;
+}
+.capture .vertical-line {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1px;
+  height: 50px;
+  margin: 0 auto 20px;
+}
+.capture .title {
+  width: 80%;
+  max-width: 600px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 1em auto;
+  background: pink;
+  letter-spacing: 1rem;
+}
+.capture .sub-text {
+  width: 85%;
+  max-width: 340px;
+}
 
 .story {
   background-color: orange;
   margin: 70px auto;
-  width: 85%; }
-  .story .story-img {
-    background-image: url("../img/lake-trees.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 200px; }
-  .story .story-info {
-    text-align: center; }
-    .story .story-info .title {
-      width: 80%;
-      max-width: 600px; }
-    .story .story-info .sub-text {
-      width: 90%;
-      max-width: 340px; }
-    .story .story-info .sub-link {
-      display: inline-block;
-      text-decoration: none;
-      font-family: "raleway", sans-serif;
-      color: #D4AF37;
-      letter-spacing: 1px;
-      margin: 1em 0; }
-  .story .photographer {
-    width: 100%;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    display: block; }
+  width: 85%;
+}
+.story .story-img {
+  background-image: url("../img/lake-trees.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+.story .story-info {
+  text-align: center;
+}
+.story .story-info .title {
+  width: 80%;
+  max-width: 600px;
+}
+.story .story-info .sub-text {
+  width: 90%;
+  max-width: 340px;
+}
+.story .story-info .sub-link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #D4AF37;
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
+.story .photographer {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
 
 footer {
   text-align: center;
   padding: 4rem;
-  background-color: #F8F8F8; }
-  footer .footer-logo {
-    width: 150px;
-    margin-bottom: 2em; }
-  footer .social-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 2em auto;
-    width: 50%;
-    background-color: palegoldenrod; }
-    footer .social-links .social-item {
-      list-style: none; }
-      footer .social-links .social-item .social-link {
-        font-size: 2em;
-        color: black; }
-  footer .copyright {
-    text-align: center; }
+  background-color: #F8F8F8;
+}
+footer .footer-logo {
+  width: 150px;
+  margin-bottom: 2em;
+}
+footer .social-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em auto;
+  width: 50%;
+  background-color: palegoldenrod;
+}
+footer .social-links .social-item {
+  list-style: none;
+}
+footer .social-links .social-item .social-link {
+  font-size: 2em;
+  color: black;
+}
+footer .copyright {
+  text-align: center;
+}

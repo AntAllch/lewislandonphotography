@@ -7,6 +7,8 @@
 //     font-family: $ff-primary;
 // }
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300;400&display=swap');  
+
 .copyright,
 .footer-text,
 .sub-text,
@@ -22,7 +24,7 @@ nav
     font-weight: 300;
     margin: 1em auto;
     background: pink;
-    letter-spacing: 1rem;
+    letter-spacing: 0.6rem;
 }
 
 .subtitle{
@@ -40,4 +42,20 @@ nav
     letter-spacing: 1px;
     margin: 0 auto;
     line-height: 1.8;
+
+    // @include responsive(desktop){
+    //     font-size: 0.8rem;
+    // }
+}
+
+//Media Queries
+
+.title,
+.subtitle,
+.sub-text{
+
+    @include responsive(desktop){
+        margin: 0;
+    }
+
 }

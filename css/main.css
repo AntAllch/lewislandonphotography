@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300;400&display=swap");
 *,
 *::before,
 *::after {
@@ -30,16 +32,16 @@ nav {
 }
 
 .title {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-weight: 300;
   margin: 1em auto;
   background: pink;
-  letter-spacing: 1rem;
+  letter-spacing: 0.6rem;
 }
 
 .subtitle {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 300;
@@ -52,6 +54,14 @@ nav {
   letter-spacing: 1px;
   margin: 0 auto;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 600px) {
+  .title,
+.subtitle,
+.sub-text {
+    margin: 0;
+  }
 }
 
 header .logo-container {
@@ -143,7 +153,7 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
 .most-recent .most-recent-info .sub-link {
   display: inline-block;
   text-decoration: none;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   color: #D4AF37;
   letter-spacing: 1px;
   margin: 1em 0;
@@ -216,23 +226,62 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
   margin: 70px auto;
   width: 85%;
 }
+@media screen and (min-width: 600px) {
+  .story {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+}
 .story .story-img {
-  background-image: url("../img/lake-trees.jpg");
+  background-image: url("../img/snowtrees.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
 }
+@media screen and (min-width: 600px) {
+  .story .story-img {
+    width: 40%;
+    height: 100%;
+  }
+}
 .story .story-info {
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .story .story-info {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 15%;
+  }
 }
 .story .story-info .title {
   width: 80%;
   max-width: 600px;
 }
+@media screen and (min-width: 600px) {
+  .story .story-info .title {
+    margin-bottom: 2em;
+  }
+}
 .story .story-info .sub-text {
   width: 90%;
   max-width: 340px;
+}
+@media screen and (min-width: 600px) {
+  .story .story-info .sub-text {
+    width: 90%;
+    max-width: 221px;
+    margin-bottom: 2em;
+    line-height: 1.4;
+  }
 }
 .story .story-info .sub-link {
   display: inline-block;
@@ -246,7 +295,18 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  display: block;
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .story .photographer {
+    width: 25%;
+    height: 85%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-30%, -50%);
+  }
 }
 
 footer {

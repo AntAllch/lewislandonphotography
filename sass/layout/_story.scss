@@ -1,6 +1,6 @@
 .story{
 
-    background-color: orange;
+    background-color: $light-grey;
     width: 85%;
     margin: 0 auto;
 
@@ -75,7 +75,6 @@
             }
 
             @include responsive(desktop){
-                font-size: 1.3rem;
                 max-width: 280px;
             }
         }
@@ -87,10 +86,6 @@
             color: $accent;
             letter-spacing: 1px;
             margin: 1em 0;
-
-            @include responsive(desktop){
-                font-size: 1.3rem;
-            }
         }
 
     }

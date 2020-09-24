@@ -1,6 +1,6 @@
 footer{
     text-align: center;
-    padding: 4rem;
+    padding: 5rem;
     background-color: $light-grey;
 
     .footer-logo{
@@ -8,12 +8,22 @@ footer{
         margin-bottom: 2em;
     }
 
+    .footer-text{
+
+        @include responsive(desktop){
+            margin-bottom: 10rem;
+            letter-spacing: 2.5px;
+            line-height: 1.5;
+        }
+    }
+
     //The unordered list item - "ul"
     .social-links{
         display: flex;
-        justify-content: space-around;
-        margin: 2em auto;
+        justify-content: space-between;
         width: 50%;
+        max-width: 300px;
+        margin: 2em auto;
         background-color: palegoldenrod;
 
         //The list item - "li"

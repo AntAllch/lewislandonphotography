@@ -7,6 +7,9 @@
 //     font-family: $ff-primary;
 // }
 
+//ff-primary =  Playfair Display, serif
+//ff-secondary = Raleway, sans-serif
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300;400&display=swap');  
 
 .copyright,
@@ -45,6 +48,16 @@ nav
 
     @include responsive(desktop){
         font-size: 1.1rem;
+    }
+}
+
+.sub-link{
+
+    transition: all 0.15s ease-in-out;
+
+    &:hover,
+    &:focus{
+        filter: brightness(50%);
     }
 }
 

@@ -10,7 +10,7 @@
     @include responsive(desktop){
         display: flex;
         height: 80vh;
-        gap: 2em;
+        gap: 1em;
         margin: 0 0 $desktop-margin;
 
         .hero-1,

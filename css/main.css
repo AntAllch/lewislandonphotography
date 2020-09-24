@@ -123,8 +123,8 @@ nav {
       display: -ms-flexbox;
       display: flex;
       height: 80vh;
-      gap: 2em;
-      margin: 0 0 300px auto; } }
+      gap: 1em;
+      margin: 0 0 250px auto; } }
   @media screen and (min-width: 1000px) and (min-width: 1000px) {
     .hero .hero-1,
     .hero .hero-2,
@@ -165,12 +165,12 @@ nav {
     .mini-desc {
       max-width: 100%; }
       .mini-desc .title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 1.8rem; }
       .mini-desc .sub-text {
-        max-width: 750px;
+        max-width: 700px;
         margin: 0 auto;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: 2.5px; } }
 
 .most-recent {
@@ -179,7 +179,7 @@ nav {
   text-align: center; }
   @media screen and (min-width: 1000px) {
     .most-recent {
-      margin: 300px auto; } }
+      margin: 250px auto; } }
   .most-recent .most-recent-info {
     width: 85%;
     margin: 0 auto;
@@ -221,7 +221,7 @@ nav {
       -ms-grid-columns: 1.1fr 0.7fr;
       grid-template-columns: 1.1fr 0.7fr;
       max-width: 900px;
-      margin: 300px auto; } }
+      margin: 250px auto; } }
   .marriage .marriage-img {
     background-image: url("../img/couple-kiss.jpg");
     background-size: cover;
@@ -289,7 +289,7 @@ nav {
   background: lightblue; }
   @media screen and (min-width: 1000px) {
     .capture {
-      margin: 300px auto; } }
+      margin: 250px auto; } }
   .capture .vertical-line {
     background-color: rgba(0, 0, 0, 0.5);
     width: 1px;

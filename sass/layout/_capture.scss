@@ -1,9 +1,13 @@
 .capture{
     text-align: center;
     // margin: 300px auto;
-    margin: $margin-spacing;
+    margin: $mobile-margin;
     // width: 90%;
     background: lightblue;
+
+    @include responsive(desktop){
+        margin: $desktop-margin;
+    }
 
     .vertical-line{
         background-color: rgba(0, 0, 0, 0.5);

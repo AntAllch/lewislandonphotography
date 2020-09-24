@@ -70,6 +70,9 @@ header .logo-container {
   margin: 30px 0; }
   header .logo-container .logo {
     width: 200px; }
+  @media screen and (min-width: 1000px) {
+    header .logo-container {
+      margin-top: 90px; } }
 
 nav {
   font-size: 1.4rem;
@@ -77,7 +80,7 @@ nav {
   font-weight: 400; }
   @media screen and (min-width: 1000px) {
     nav {
-      margin: 100px auto; } }
+      margin: 90px auto; } }
   nav .nav-list {
     width: 95%;
     max-width: 1200px;
@@ -92,6 +95,10 @@ nav {
         justify-content: space-between;
         max-width: 400px;
         font-size: 1.1rem; } }
+    @media screen and (min-width: 1000px) {
+      nav .nav-list {
+        font-size: 1.3rem;
+        max-width: 900px; } }
     nav .nav-list .nav-item {
       list-style: none; }
     nav .nav-list .nav-link {
@@ -109,14 +116,15 @@ nav {
   grid-template-areas: "top-left top-right" "bottom-left bottom-right";
   width: 100vw;
   height: 40vh;
-  margin: 0 0 300px auto; }
+  margin: 0 0 100px auto; }
   @media screen and (min-width: 1000px) {
     .hero {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       height: 80vh;
-      gap: 2em; } }
+      gap: 2em;
+      margin: 0 0 300px auto; } }
   @media screen and (min-width: 1000px) and (min-width: 1000px) {
     .hero .hero-1,
     .hero .hero-2,
@@ -166,9 +174,12 @@ nav {
         letter-spacing: 2.5px; } }
 
 .most-recent {
-  margin: 300px auto;
+  margin: 100px auto;
   background-color: burlywood;
   text-align: center; }
+  @media screen and (min-width: 1000px) {
+    .most-recent {
+      margin: 300px auto; } }
   .most-recent .most-recent-info {
     width: 85%;
     margin: 0 auto;
@@ -189,7 +200,7 @@ nav {
     margin: 0 auto; }
 
 .marriage {
-  margin: 300px auto;
+  margin: 100px auto;
   width: 85%;
   max-width: 850px;
   text-align: center; }
@@ -209,7 +220,8 @@ nav {
       grid-template-rows: 30px 1fr 1fr 50px;
       -ms-grid-columns: 1.1fr 0.7fr;
       grid-template-columns: 1.1fr 0.7fr;
-      max-width: 900px; } }
+      max-width: 900px;
+      margin: 300px auto; } }
   .marriage .marriage-img {
     background-image: url("../img/couple-kiss.jpg");
     background-size: cover;
@@ -273,8 +285,11 @@ nav {
 
 .capture {
   text-align: center;
-  margin: 300px auto;
+  margin: 100px auto;
   background: lightblue; }
+  @media screen and (min-width: 1000px) {
+    .capture {
+      margin: 300px auto; } }
   .capture .vertical-line {
     background-color: rgba(0, 0, 0, 0.5);
     width: 1px;
@@ -294,7 +309,8 @@ nav {
 
 .story {
   background-color: orange;
-  width: 85%; }
+  width: 85%;
+  margin: 0 auto; }
   @media screen and (min-width: 600px) {
     .story {
       display: -webkit-box;

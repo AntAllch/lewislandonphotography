@@ -5,12 +5,13 @@
     width: 100vw;
     height: 40vh;
     // background-color: aquamarine;
-    margin: 0 0 $margin-spacing;
+    margin: 0 0 $mobile-margin;
 
     @include responsive(desktop){
         display: flex;
         height: 80vh;
         gap: 2em;
+        margin: 0 0 $desktop-margin;
 
         .hero-1,
         .hero-2,

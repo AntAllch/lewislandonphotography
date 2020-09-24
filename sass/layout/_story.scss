@@ -2,6 +2,7 @@
 
     background-color: orange;
     width: 85%;
+    margin: 0 auto;
 
     @include responsive(smalldesktop){
         display: flex;

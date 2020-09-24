@@ -1,8 +1,12 @@
 .most-recent{
 
-    margin: $margin-spacing;
+    margin: $mobile-margin;
     background-color: burlywood;
     text-align: center;
+
+    @include responsive(desktop){
+        margin: $desktop-margin;
+    }
 
     .most-recent-info{
         width: 85%;

@@ -1,22 +1,28 @@
 .mini-desc{
-    background-color: cadetblue;
+    // background-color: cadetblue;
     text-align: center;
     width: 85%;
     max-width: 475px;
     margin: 0 auto;
 
     @include responsive(desktop){
-        max-width: 100%;
+        max-width: 100%;        
+    }
 
-        .title{
+    .title{
+        margin-bottom: 1em;
+
+        @include responsive(desktop){
             font-size: 2.5rem;
             margin-bottom: 1.8rem;
         }
+    }
 
-        .sub-text{
+    .sub-text{
+        
+        @include responsive(desktop){
             max-width: 600px;
             margin: 0 auto;
-            // font-size: 1.3rem;
             letter-spacing: 2.5px;
         }
     }

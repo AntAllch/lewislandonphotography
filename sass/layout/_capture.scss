@@ -1,6 +1,6 @@
 .capture{
     text-align: center;
-    background: lightblue;
+    // background: lightblue;
     padding: 4em 0;
 
     @include responsive(desktop){
@@ -20,7 +20,7 @@
         text-transform: uppercase;
         font-weight: 300;
         margin: 1em auto;
-        background: pink;
+        // background: pink;
         letter-spacing: 1rem;
 
         @include responsive(desktop){

@@ -78,6 +78,9 @@ header .logo-container {
   margin: 30px 0; }
   header .logo-container .logo {
     width: 200px; }
+    @media screen and (min-width: 1000px) {
+      header .logo-container .logo {
+        width: 250px; } }
   @media screen and (min-width: 1000px) {
     header .logo-container {
       margin-top: 90px; } }
@@ -105,8 +108,8 @@ nav {
         font-size: 1.1rem; } }
     @media screen and (min-width: 1000px) {
       nav .nav-list {
-        font-size: 1.3rem;
-        max-width: 900px; } }
+        font-size: 1.5rem;
+        max-width: 1000px; } }
     nav .nav-list .nav-item {
       list-style: none; }
     nav .nav-list .nav-link {
@@ -122,92 +125,189 @@ nav {
   display: -ms-grid;
   display: grid;
   grid-template-areas: "top-left top-right" "bottom-left bottom-right";
-  width: 100vw;
+  width: 100%;
   height: 40vh;
-  margin: 0 0 100px auto; }
-  @media screen and (min-width: 1000px) {
+  margin: 0 0 150px auto; }
+  @media screen and (min-width: 600px) {
     .hero {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 80vh;
-      gap: 1em;
-      margin: 0 0 250px auto; } }
-  @media screen and (min-width: 1000px) and (min-width: 1000px) {
-    .hero .hero-1,
-    .hero .hero-2,
-    .hero .hero-3,
-    .hero .hero-4 {
-      width: 25%; } }
+      height: 50vh;
+      gap: 1em; }
+      .hero .hero-1,
+      .hero .hero-2,
+      .hero .hero-3,
+      .hero .hero-4,
+      .hero .hero-5 {
+        width: 25%; } }
+  @media screen and (min-width: 1000px) {
+    .hero {
+      height: 70vh;
+      margin: 0 0 200px auto; } }
   .hero .hero-img-container {
     background-position: center;
     background-size: cover; }
   .hero .hero-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    background-image: url("/img/groom.jpg");
+    background-image: url("/img/bride-dress.jpg");
     grid-area: top-left; }
   .hero .hero-2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-    background-image: url("/img/low-angle-building.jpg");
+    background-image: url("/img/groom.jpg");
     grid-area: top-right; }
   .hero .hero-3 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    background-image: url("/img/lake-trees.jpg");
+    background-image: url("/img/low-angle-building.jpg");
     grid-area: bottom-left; }
   .hero .hero-4 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
-    background-image: url("/img/reindeer.jpg");
+    background-image: url("/img/lake-trees.jpg");
     grid-area: bottom-right; }
+  .hero .hero-5 {
+    background-image: url("/img/reindeer.jpg");
+    display: none; }
+    @media screen and (min-width: 600px) {
+      .hero .hero-5 {
+        display: block; } }
 
 .mini-desc {
-  background-color: cadetblue;
   text-align: center;
   width: 85%;
   max-width: 475px;
   margin: 0 auto; }
   @media screen and (min-width: 1000px) {
     .mini-desc {
-      max-width: 100%; }
+      max-width: 100%; } }
+  .mini-desc .title {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 1000px) {
       .mini-desc .title {
         font-size: 2.5rem;
-        margin-bottom: 1.8rem; }
-      .mini-desc .sub-text {
-        max-width: 600px;
-        margin: 0 auto;
-        letter-spacing: 2.5px; } }
+        margin-bottom: 1.8rem; } }
+  @media screen and (min-width: 1000px) {
+    .mini-desc .sub-text {
+      max-width: 600px;
+      margin: 0 auto;
+      letter-spacing: 2.5px; } }
 
 .most-recent {
-  margin: 100px auto;
-  background-color: burlywood;
-  text-align: center; }
+  margin: 150px auto;
+  text-align: center;
+  position: relative; }
+  @media screen and (min-width: 600px) {
+    .most-recent {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 35px 1fr 150px;
+      grid-template-columns: 35px 1fr 150px; } }
   @media screen and (min-width: 1000px) {
     .most-recent {
-      margin: 250px auto; } }
+      margin: 200px auto;
+      width: 85%;
+      max-width: 1200px;
+      height: 60vh;
+      -ms-grid-columns: 75px 1fr 200px;
+      grid-template-columns: 75px 1fr 200px; } }
+  .most-recent .grey-block {
+    background-color: #F8F8F8;
+    display: none; }
+    @media screen and (min-width: 1000px) {
+      .most-recent .grey-block {
+        display: block;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2; } }
   .most-recent .most-recent-info {
     width: 85%;
+    width: 336px;
     margin: 0 auto;
-    background-color: palegreen; }
+    background-color: #fff; }
+    @media screen and (min-width: 600px) {
+      .most-recent .most-recent-info {
+        width: 250px;
+        height: 220px;
+        padding: 1em;
+        position: absolute;
+        bottom: 20%;
+        right: -60px;
+        -webkit-transform: translate(-40%);
+        -ms-transform: translate(-40%);
+        transform: translate(-40%);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.16);
+        box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.16); } }
+    @media screen and (min-width: 1000px) {
+      .most-recent .most-recent-info {
+        width: 350px;
+        max-width: 400px;
+        height: 299px;
+        bottom: 15%;
+        right: -140px; } }
+    @media screen and (min-width: 600px) {
+      .most-recent .most-recent-info .sub-text {
+        margin-bottom: 2em;
+        line-height: 2;
+        max-width: 180px;
+        margin: 15px auto; } }
+    @media screen and (min-width: 1000px) {
+      .most-recent .most-recent-info .sub-text {
+        max-width: 300px;
+        letter-spacing: 2.5px;
+        margin-bottom: 2em; } }
+    @media screen and (min-width: 1000px) {
+      .most-recent .most-recent-info .subtitle {
+        font-size: 1.3em; } }
     .most-recent .most-recent-info .sub-link {
       display: inline-block;
       text-decoration: none;
-      font-family: "Playfair Display", serif;
+      font-family: "Raleway", sans-serif;
       color: #D4AF37;
       letter-spacing: 1px;
-      margin: 1em 0; }
+      margin: 15px 0; }
+      @media screen and (min-width: 600px) {
+        .most-recent .most-recent-info .sub-link {
+          margin: 0; } }
+      @media screen and (min-width: 1000px) {
+        .most-recent .most-recent-info .sub-link {
+          letter-spacing: 2.5px;
+          margin: 15px 0 0; } }
   .most-recent .most-recent-img {
     background-image: url("../img/grass-proposal.jpg");
     background-size: cover;
     background-position: center;
     width: 85%;
+    max-width: 460px;
     height: 40vh;
     margin: 0 auto; }
+    @media screen and (min-width: 600px) {
+      .most-recent .most-recent-img {
+        height: 45vh;
+        width: 100%;
+        max-width: 90%;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
+        grid-column: 2/3; } }
+    @media screen and (min-width: 1000px) {
+      .most-recent .most-recent-img {
+        height: 100%;
+        max-width: 100%; } }
 
 .marriage {
-  margin: 100px auto;
+  margin: 150px auto;
   width: 85%;
   max-width: 850px;
   text-align: center; }
@@ -228,7 +328,7 @@ nav {
       -ms-grid-columns: 1.1fr 0.7fr;
       grid-template-columns: 1.1fr 0.7fr;
       max-width: 900px;
-      margin: 250px auto; } }
+      margin: 200px auto; } }
   .marriage .marriage-img {
     background-image: url("../img/couple-kiss.jpg");
     background-size: cover;
@@ -259,10 +359,20 @@ nav {
       max-width: 100%; } }
   .marriage .marriage-info .title {
     font-size: 2.5rem;
-    margin-bottom: 3em; }
-  @media screen and (min-width: 600px) {
-    .marriage .marriage-info .sub-text {
-      margin-bottom: 2em; } }
+    margin-bottom: 1em; }
+  .marriage .marriage-info .sub-text {
+    max-width: 300px;
+    margin-bottom: 1em; }
+    @media screen and (min-width: 600px) {
+      .marriage .marriage-info .sub-text {
+        margin-bottom: 2em; } }
+  .marriage .marriage-info .sub-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: #D4AF37;
+    letter-spacing: 1px;
+    margin: 1.5em 0 3em; }
   .marriage .wedding-rings {
     background-image: url("../img/bw-rings.jpg");
     background-size: cover;
@@ -283,17 +393,9 @@ nav {
     @media screen and (min-width: 1000px) {
       .marriage .wedding-rings {
         max-width: 100%; } }
-  .marriage .sub-link {
-    display: inline-block;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    color: #D4AF37;
-    letter-spacing: 1px;
-    margin: 1em 0; }
 
 .capture {
   text-align: center;
-  background: lightblue;
   padding: 4em 0; }
   @media screen and (min-width: 1000px) {
     .capture {
@@ -309,7 +411,6 @@ nav {
     text-transform: uppercase;
     font-weight: 300;
     margin: 1em auto;
-    background: pink;
     letter-spacing: 1rem; }
     @media screen and (min-width: 1000px) {
       .capture .title {
@@ -377,7 +478,7 @@ nav {
     @media screen and (min-width: 1000px) {
       .story .story-info {
         width: 50%;
-        padding-left: 160px; } }
+        padding-left: 200px; } }
     .story .story-info .title {
       width: 80%;
       max-width: 600px; }
@@ -454,8 +555,7 @@ footer {
     justify-content: space-between;
     width: 50%;
     max-width: 300px;
-    margin: 2em auto;
-    background-color: palegoldenrod; }
+    margin: 2em auto; }
     footer .social-links .social-item {
       list-style: none; }
       footer .social-links .social-item .social-link {

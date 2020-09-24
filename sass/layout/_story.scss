@@ -1,7 +1,6 @@
 .story{
 
     background-color: orange;
-    margin: 70px auto;
     width: 85%;
 
     @include responsive(smalldesktop){
@@ -12,7 +11,7 @@
     }
 
     @include responsive(desktop){
-        height: 65vh;
+        height: 70vh;
     }
 
     .story-img{
@@ -47,6 +46,7 @@
 
         @include responsive(desktop){
             width: 50%;
+            padding-left: 160px;
         }
 
         .title{
@@ -55,6 +55,10 @@
             
             @include responsive(smalldesktop){
                 margin-bottom: 2em;
+            }
+
+            @include responsive(desktop){
+                font-size: 2.5rem;
             }
         }
 
@@ -68,6 +72,11 @@
                 margin-bottom: 2em;
                 line-height: 1.4;
             }
+
+            @include responsive(desktop){
+                font-size: 1.3rem;
+                max-width: 280px;
+            }
         }
 
         .sub-link{
@@ -77,6 +86,10 @@
             color: $accent;
             letter-spacing: 1px;
             margin: 1em 0;
+
+            @include responsive(desktop){
+                font-size: 1.3rem;
+            }
         }
 
     }
@@ -99,6 +112,7 @@
 
         @include responsive(desktop){
             width: 23%;
+            max-width: 300px;
             height: 70%;
             left: 50%;
             transform: translate(-50%, -50%);

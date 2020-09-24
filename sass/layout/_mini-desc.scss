@@ -4,4 +4,20 @@
     width: 85%;
     max-width: 475px;
     margin: 0 auto;
+
+    @include responsive(desktop){
+        max-width: 100%;
+
+        .title{
+            font-size: 3rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .sub-text{
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            letter-spacing: 2.5px;
+        }
+    }
 }

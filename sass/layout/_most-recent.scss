@@ -1,6 +1,6 @@
 .most-recent{
 
-    margin: 70px 0;
+    margin: $margin-spacing;
     background-color: burlywood;
     text-align: center;
 
@@ -9,9 +9,9 @@
         margin: 0 auto;
         background-color: palegreen;
 
-        .sub-text{
-            // margin-bottom: 1em;
-        }
+        // .sub-text{
+        //     // margin-bottom: 1em;
+        // }
 
         .sub-link{
             display: inline-block;

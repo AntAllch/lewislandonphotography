@@ -1,20 +1,66 @@
 .marriage{
 
-    background-color: teal;
-    margin: 70px auto;
+    // background-color: teal;
+    margin: $margin-spacing;
     width: 85%;
+    max-width: 850px;
     text-align: center;
 
     @include responsive(smalldesktop){
-        display: flex;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 0px 0.5fr 0.5fr 0px;
+        gap: 6em;
+        width: 80%;
     }
 
+    @include responsive(desktop){
+        grid-template-rows: 30px 1fr 1fr 50px;
+        grid-template-columns: 1.1fr 0.7fr;
+        max-width: 900px;
+    }
+
+    //couple
     .marriage-img{
         @include imagejpg(couple-kiss);
         width: 100%;
         height: 60vh;
+
+        @include responsive(smalldesktop){
+            grid-column: 1/2;
+            grid-row: 1/4;
+            height: 100%;
+            // max-width: 374px;
+        }
     }
 
+    .marriage-info{
+
+        @include responsive(smalldesktop){
+            grid-column: 2/3;
+            grid-row: 2/3;
+            text-align: left;
+            max-width: 227px;
+        }
+
+        @include responsive(desktop){
+            max-width: 100%;
+        }
+
+
+        .title{
+            margin-bottom: 3em;
+        }
+
+        .sub-text{
+            
+            @include responsive(smalldesktop){
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    //black and white wedding rings
     .wedding-rings{
         @include imagejpg(bw-rings);
         width: 40%;
@@ -23,6 +69,14 @@
 
         @include responsive(smalldesktop){
             display: block;
+            grid-column: 2/3;
+            grid-row: 3/5;
+            width: 100%;
+            max-width: 227px;
+        }
+        
+        @include responsive(desktop){
+            max-width: 100%;
         }
     }
 

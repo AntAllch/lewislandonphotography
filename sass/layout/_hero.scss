@@ -4,8 +4,23 @@
                          "bottom-left bottom-right";
     width: 100vw;
     height: 40vh;
-    background-color: aquamarine;
-    margin: 0 0 70px 0;
+    // background-color: aquamarine;
+    margin: 0 0 $margin-spacing;
+
+    @include responsive(desktop){
+        display: flex;
+        height: 80vh;
+        gap: 2em;
+
+        .hero-1,
+        .hero-2,
+        .hero-3,
+        .hero-4{
+            @include responsive(desktop){
+                width: 25%;
+             }
+        }
+    }
 
     .hero-img-container{
         // width: 24.5%;
@@ -17,6 +32,8 @@
         background-image: url("/img/groom.jpg");
         grid-area: top-left;
         // background-color: red;
+
+        
     }
 
     .hero-2{

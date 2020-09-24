@@ -5,6 +5,10 @@
     width: 85%;
     text-align: center;
 
+    @include responsive(smalldesktop){
+        display: flex;
+    }
+
     .marriage-img{
         @include imagejpg(couple-kiss);
         width: 100%;
@@ -13,9 +17,13 @@
 
     .wedding-rings{
         @include imagejpg(bw-rings);
-        // width: 40%;
-        height: 15vh;
+        width: 40%;
+        // height: 15vh;
         display: none;
+
+        @include responsive(smalldesktop){
+            display: block;
+        }
     }
 
     .sub-link{

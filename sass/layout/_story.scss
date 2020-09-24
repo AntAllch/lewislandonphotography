@@ -4,11 +4,15 @@
     margin: 70px auto;
     width: 85%;
 
-    @include responsive(desktop){
+    @include responsive(smalldesktop){
         display: flex;
         width: 100%;
         height: 50vh;
         position: relative;
+    }
+
+    @include responsive(desktop){
+        height: 65vh;
     }
 
     .story-img{
@@ -16,16 +20,20 @@
         width: 100%;
         height: 200px;
 
-        @include responsive(desktop){
+        @include responsive(smalldesktop){
             width: 40%;
             height: 100%;
+        }
+
+        @include responsive(desktop){
+            width: 50%;
         }
     }
 
     .story-info{
         text-align: center;
 
-        @include responsive(desktop){
+        @include responsive(smalldesktop){
             width: 60%;
             height: 100%;
             
@@ -37,11 +45,15 @@
             padding-left: 15%;
         }
 
+        @include responsive(desktop){
+            width: 50%;
+        }
+
         .title{
             width: 80%;
             max-width: 600px;
             
-            @include responsive(desktop){
+            @include responsive(smalldesktop){
                 margin-bottom: 2em;
             }
         }
@@ -50,7 +62,7 @@
             width: 90%;
             max-width: 340px;
 
-            @include responsive(desktop){
+            @include responsive(smalldesktop){
                 width: 90%;
                 max-width: 221px;
                 margin-bottom: 2em;
@@ -75,7 +87,7 @@
         object-fit: cover;
         display: none;
 
-        @include responsive(desktop){
+        @include responsive(smalldesktop){
             width: 25%;
             height: 85%;
             display: block;
@@ -83,6 +95,13 @@
             top: 50%;
             left: 35%;
             transform: translate(-30%, -50%);
+        }
+
+        @include responsive(desktop){
+            width: 23%;
+            height: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 

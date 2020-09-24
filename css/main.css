@@ -55,6 +55,11 @@ nav {
   margin: 0 auto;
   line-height: 1.8;
 }
+@media screen and (min-width: 1000px) {
+  .sub-text {
+    font-size: 1.1rem;
+  }
+}
 
 @media screen and (min-width: 600px) {
   .title,
@@ -173,6 +178,11 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
   width: 85%;
   text-align: center;
 }
+@media screen and (min-width: 600px) {
+  .marriage {
+    display: flex;
+  }
+}
 .marriage .marriage-img {
   background-image: url("../img/couple-kiss.jpg");
   background-size: cover;
@@ -184,8 +194,13 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
   background-image: url("../img/bw-rings.jpg");
   background-size: cover;
   background-position: center;
-  height: 15vh;
+  width: 40%;
   display: none;
+}
+@media screen and (min-width: 600px) {
+  .marriage .wedding-rings {
+    display: block;
+  }
 }
 .marriage .sub-link {
   display: inline-block;
@@ -234,6 +249,11 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
     position: relative;
   }
 }
+@media screen and (min-width: 1000px) {
+  .story {
+    height: 65vh;
+  }
+}
 .story .story-img {
   background-image: url("../img/snowtrees.jpg");
   background-size: cover;
@@ -245,6 +265,11 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
   .story .story-img {
     width: 40%;
     height: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .story .story-img {
+    width: 50%;
   }
 }
 .story .story-info {
@@ -260,6 +285,11 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
     align-items: flex-start;
     text-align: left;
     padding-left: 15%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .story .story-info {
+    width: 50%;
   }
 }
 .story .story-info .title {
@@ -306,6 +336,14 @@ nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
     top: 50%;
     left: 35%;
     transform: translate(-30%, -50%);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .story .photographer {
+    width: 23%;
+    height: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

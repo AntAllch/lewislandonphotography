@@ -43,9 +43,9 @@ nav
     margin: 0 auto;
     line-height: 1.8;
 
-    // @include responsive(desktop){
-    //     font-size: 0.8rem;
-    // }
+    @include responsive(desktop){
+        font-size: 1.1rem;
+    }
 }
 
 //Media Queries
@@ -54,7 +54,7 @@ nav
 .subtitle,
 .sub-text{
 
-    @include responsive(desktop){
+    @include responsive(smalldesktop){
         margin: 0;
     }
 

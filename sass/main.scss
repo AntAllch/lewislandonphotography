@@ -7,6 +7,7 @@
 @import "abstracts/mixins";
 @import "abstracts/responsive";
 @import "abstracts/typography";
+@import "abstracts/observer";
 
 @import "components/buttons";
 
@@ -18,3 +19,4 @@
 @import "layout/capture";
 @import "layout/story";
 @import "layout/footer";
+@import "layout/hr";

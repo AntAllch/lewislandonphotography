@@ -1,0 +1,28 @@
+.fade-in{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1000ms cubic-bezier(.59,.36,.02,1.03);
+}
+
+.fade-in.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.from-left{
+    transform: translateX(-50px);
+}
+
+.from-right{
+    transform: translateX(50px);
+}
+
+.from-left,
+.from-right{
+    transition: all 600ms cubic-bezier(.59,.36,.02,1.03);
+}
+
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0);
+}

@@ -50,8 +50,11 @@
 
 
         .title{
-            font-size: 2.5rem;
             margin-bottom: 1em;
+
+            @include responsive(desktop){
+                font-size: 2.5rem;
+            }
         }
 
         .sub-text{

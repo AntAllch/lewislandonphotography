@@ -145,8 +145,9 @@ nav {
       -webkit-transition: color 0.15s ease-in-out;
       -o-transition: color 0.15s ease-in-out;
       transition: color 0.15s ease-in-out; }
-      nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus {
-        color: #D4AF37; }
+      nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus, nav .nav-list .nav-link.active {
+        color: #D4AF37;
+        text-decoration: underline; }
 
 .hero {
   display: -ms-grid;
@@ -389,6 +390,9 @@ nav {
     @media screen and (min-width: 600px) {
       .marriage .marriage-info .sub-text {
         margin-bottom: 2em; } }
+    @media screen and (min-width: 1000px) {
+      .marriage .marriage-info .sub-text {
+        letter-spacing: 2.5px; } }
   .marriage .marriage-info .sub-link {
     display: inline-block;
     text-decoration: none;
@@ -522,7 +526,8 @@ nav {
           line-height: 1.4; } }
       @media screen and (min-width: 1000px) {
         .story .story-info .sub-text {
-          max-width: 280px; } }
+          max-width: 280px;
+          letter-spacing: 2.5px; } }
     .story .story-info .sub-link {
       display: inline-block;
       text-decoration: none;

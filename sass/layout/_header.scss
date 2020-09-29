@@ -60,9 +60,12 @@ nav{
             transition: color 0.15s ease-in-out;
 
             &:hover,
-            &:focus{
+            &:focus,
+            &.active{
                 color: $accent;
+                text-decoration: underline;
             }
+
         }
     }
 }

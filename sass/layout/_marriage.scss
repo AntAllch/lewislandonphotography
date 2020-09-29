@@ -65,6 +65,10 @@
             @include responsive(smalldesktop){
                 margin-bottom: 2em;
             }
+
+            @include responsive(desktop){
+                letter-spacing: 2.5px;
+            }
         }
 
         .sub-link{

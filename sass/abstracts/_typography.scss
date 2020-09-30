@@ -16,7 +16,10 @@
 .footer-text,
 .sub-text,
 .sub-link,
-nav
+.submit-btn,
+.contact-email,
+nav,
+input
 {
     font-family: $ff-secondary;
 }
@@ -30,6 +33,15 @@ nav
     letter-spacing: 0.6rem;
 }
 
+.contact-title,
+.contact-subtitle{
+    font-family: $ff-primary;
+    text-transform: uppercase;
+    font-weight: 300;
+    // background: pink;
+    letter-spacing: 0.6rem;
+}
+
 .subtitle{
     font-family: $ff-primary;
     text-transform: uppercase;
@@ -39,7 +51,8 @@ nav
 }
 
 // Generic Styling
-.sub-text{
+.sub-text,
+.contact-email{
     // background: yellow;
     font-weight: 300;
     letter-spacing: 1px;

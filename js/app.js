@@ -21,12 +21,30 @@ const appearOnScroll = new IntersectionObserver
         }
     })
 },
- appearOptions);
+appearOptions);
 
- faders.forEach(fader => {
-     appearOnScroll.observe(fader);
- })
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
 
- sliders.forEach(slider => {
-     appearOnScroll.observe(slider)
- })
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider)
+})
+
+
+//****************************************************//
+
+//Contact Page
+
+const contactActivation = document.querySelector(".contact-activation");
+const contactModal = document.querySelector(".contact");
+
+contactActivation.addEventListener("click", () =>{
+    contactModal.classList.add("open");
+});
+
+contactModal.addEventListener("click", (e) =>{
+    if(e.target.classList.contains("contact")){
+        contactModal.classList.remove("open");
+    }
+});

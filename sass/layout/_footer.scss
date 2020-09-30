@@ -9,9 +9,10 @@ footer{
     }
 
     .footer-text{
+        font-size: 0.9rem;
 
         @include responsive(desktop){
-            margin-bottom: 10rem;
+            margin-bottom: 5rem;
             letter-spacing: 2.5px;
             line-height: 1.5;
         }
@@ -22,7 +23,7 @@ footer{
         display: flex;
         justify-content: space-between;
         width: 50%;
-        max-width: 300px;
+        max-width: 200px;
         margin: 2em auto;
         // background-color: palegoldenrod;
 
@@ -33,7 +34,7 @@ footer{
             //The anchor tag - "a"
             .social-link{
                 font-size: 2em;
-                color: black;
+                color: $black-trans;
             }
         }
 
@@ -42,5 +43,6 @@ footer{
     
     .copyright{
         text-align: center;
+        font-size: 0.9rem;
     }
 }

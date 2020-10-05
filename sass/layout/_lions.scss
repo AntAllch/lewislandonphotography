@@ -1,0 +1,32 @@
+.lions{
+
+    .subject-header-img{
+        width: 100%;
+        height: 600px;
+        @include imagejpg(lion-5);
+        margin: 0 0 8em;
+    }
+
+    .title{
+        width: 200px;
+
+        // &::after{
+        //     content: "";
+        //     background-color: $light-grey;
+        //     width: 60px;
+        //     height: 20px;
+        //     position: absolute;
+        //     top: 40%;
+        //     left: 40%;
+        //     z-index: -1;
+        // }
+    }
+    
+    .subtitle{
+        margin-bottom: 1em;
+    }
+
+    .mini-desc{
+        margin-bottom: 8em;
+    }
+}

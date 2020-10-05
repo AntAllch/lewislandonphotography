@@ -48,3 +48,4 @@ contactModal.addEventListener("click", (e) =>{
         contactModal.classList.remove("open");
     }
 });
+

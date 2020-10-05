@@ -20,12 +20,19 @@ html {
 .sub-link,
 .submit-btn,
 .contact-email,
+.mob-nav-link,
+.mob-menu,
 nav,
 input {
   font-family: "Raleway", sans-serif; }
 
+.title,
+.subtitle,
+.contact-title,
+.contact-subtitle {
+  font-family: "Playfair Display", serif; }
+
 .title {
-  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-weight: 300;
   margin: 1em auto;
@@ -33,13 +40,11 @@ input {
 
 .contact-title,
 .contact-subtitle {
-  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.6rem; }
 
 .subtitle {
-  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 300;
@@ -122,7 +127,7 @@ header .logo-container {
         width: 250px; } }
   @media screen and (min-width: 1000px) {
     header .logo-container {
-      margin-top: 90px; } }
+      margin-top: 50px; } }
 
 nav {
   font-size: 1.4rem;
@@ -130,7 +135,7 @@ nav {
   font-weight: 400; }
   @media screen and (min-width: 1000px) {
     nav {
-      margin: 90px auto; } }
+      margin: 40px auto 120px; } }
   nav .nav-list {
     width: 95%;
     max-width: 1200px;
@@ -143,12 +148,13 @@ nav {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        width: 70%;
         max-width: 400px;
         font-size: 1.1rem; } }
     @media screen and (min-width: 1000px) {
       nav .nav-list {
         font-size: 1.5rem;
-        max-width: 1000px; } }
+        max-width: 800px; } }
     nav .nav-list .nav-item {
       list-style: none; }
     nav .nav-list .nav-link {
@@ -158,8 +164,7 @@ nav {
       -o-transition: color 0.15s ease-in-out;
       transition: color 0.15s ease-in-out; }
       nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus, nav .nav-list .nav-link.active {
-        color: #D4AF37;
-        text-decoration: underline; }
+        color: #D4AF37; }
 
 .contact {
   position: fixed;
@@ -171,7 +176,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,7 +311,8 @@ nav {
         padding: 1.5em 4.5em;
         border: none;
         background: #000;
-        color: #fff; }
+        color: #fff;
+        cursor: pointer; }
       .contact .contact-group form input,
       .contact .contact-group form textarea {
         padding: 0.75em 1.5em;
@@ -778,3 +784,93 @@ hr {
   @media screen and (min-width: 600px) {
     hr {
       display: block; } }
+
+.portfolio {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 10em; }
+  .portfolio .title {
+    margin: 2em auto;
+    position: relative;
+    width: 140px; }
+    @media screen and (min-width: 1000px) {
+      .portfolio .title {
+        margin: 0 auto 2em; } }
+    .portfolio .title::after {
+      content: "";
+      background-color: #F8F8F8;
+      width: 130px;
+      height: 20px;
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      z-index: -1; }
+  .portfolio .portfolio-images {
+    width: 90%;
+    max-width: 1015px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1em; }
+    @media screen and (min-width: 600px) {
+      .portfolio .portfolio-images {
+        gap: 2em; } }
+    .portfolio .portfolio-images .portfolio-image-container {
+      overflow: hidden; }
+    .portfolio .portfolio-images .portfolio-image {
+      width: 400px;
+      height: 300px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      cursor: pointer;
+      -webkit-transition: all 250ms ease-in-out;
+      -o-transition: all 250ms ease-in-out;
+      transition: all 250ms ease-in-out;
+      display: block; }
+      @media screen and (min-width: 600px) {
+        .portfolio .portfolio-images .portfolio-image {
+          width: 250px;
+          height: 300px; } }
+      .portfolio .portfolio-images .portfolio-image:hover, .portfolio .portfolio-images .portfolio-image:focus {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+
+.portfolio-set .title {
+  width: 200px; }
+
+.portfolio-set .subtitle {
+  margin-bottom: 1em; }
+
+.portfolio-set .mini-desc {
+  margin-bottom: 8em; }
+
+.portfolio-set .subject-header-img {
+  width: 100%;
+  height: 600px;
+  margin: 0 0 8em; }
+
+.portfolio-set .wedding-header-img {
+  background-image: url("../img/flower-rings.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.portfolio-set .lion-header-img {
+  background-image: url("../img/lion-5.jpg");
+  background-size: cover;
+  background-position: center; }

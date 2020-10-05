@@ -1,0 +1,41 @@
+.portfolio-set{
+
+    
+
+    .title{
+        width: 200px;
+
+        // &::after{
+        //     content: "";
+        //     background-color: $light-grey;
+        //     width: 60px;
+        //     height: 20px;
+        //     position: absolute;
+        //     top: 40%;
+        //     left: 40%;
+        //     z-index: -1;
+        // }
+    }
+    
+    .subtitle{
+        margin-bottom: 1em;
+    }
+
+    .mini-desc{
+        margin-bottom: 8em;
+    }
+
+    .subject-header-img{
+        width: 100%;
+        height: 600px;
+        margin: 0 0 8em;
+    }
+
+    .wedding-header-img{
+        @include imagejpg(flower-rings);
+    }
+
+    .lion-header-img{
+        @include imagejpg(lion-5);
+    }
+}

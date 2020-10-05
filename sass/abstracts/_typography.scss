@@ -18,14 +18,23 @@
 .sub-link,
 .submit-btn,
 .contact-email,
+.mob-nav-link,
+.mob-menu,
 nav,
 input
 {
     font-family: $ff-secondary;
 }
 
-.title{
+.title,
+.subtitle,
+.contact-title,
+.contact-subtitle{
     font-family: $ff-primary;
+}
+
+
+.title{
     text-transform: uppercase;
     font-weight: 300;
     margin: 1em auto;
@@ -35,7 +44,6 @@ input
 
 .contact-title,
 .contact-subtitle{
-    font-family: $ff-primary;
     text-transform: uppercase;
     font-weight: 300;
     // background: pink;
@@ -43,7 +51,6 @@ input
 }
 
 .subtitle{
-    font-family: $ff-primary;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     font-weight: 300;

@@ -1,0 +1,69 @@
+.portfolio{
+    // background-color: pink;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 10em;
+
+    .title{
+        // background-color: yellow;
+        margin: 2em auto;
+        position: relative;
+        width: 140px;
+
+        @include responsive(desktop){
+            margin: 0 auto 2em;
+        }
+
+        &::after{
+            content: "";
+            background-color: $light-grey;
+            width: 130px;
+            height: 20px;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            z-index: -1;
+        }
+    }
+
+    //this is the container that holds all the the images
+    .portfolio-images{   
+        // background-color: orange;
+        width: 90%;
+        max-width: 1015px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        @include responsive(smalldesktop){
+            gap: 2em;
+        }
+
+        .portfolio-image-container{
+            overflow: hidden;
+        }
+
+        .portfolio-image{
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all 250ms ease-in-out;
+            display: block;
+
+            @include responsive(smalldesktop){
+                width: 250px;
+                height: 300px;
+            }
+
+            &:hover,
+            &:focus{
+                transform: scale(1.05);
+            }
+        }
+   }
+}

@@ -372,7 +372,7 @@ nav {
   .hero .hero-4 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
-    background-image: url("/img/reindeer2.jpg");
+    background-image: url("/img/reindeer-small.jpg");
     grid-area: top-right; }
 
 .mini-desc {
@@ -871,6 +871,6 @@ hr {
   background-position: center; }
 
 .portfolio-set .lion-header-img {
-  background-image: url("../img/lion-5.jpg");
+  background-image: url("../img/lion-5-large.jpg");
   background-size: cover;
   background-position: center; }

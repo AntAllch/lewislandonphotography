@@ -127,7 +127,7 @@ header .logo-container {
         width: 250px; } }
   @media screen and (min-width: 1000px) {
     header .logo-container {
-      margin-top: 50px; } }
+      margin-top: 100px; } }
 
 nav {
   font-size: 1.4rem;
@@ -165,6 +165,12 @@ nav {
       transition: color 0.15s ease-in-out; }
       nav .nav-list .nav-link:hover, nav .nav-list .nav-link:focus, nav .nav-list .nav-link.active {
         color: #D4AF37; }
+    nav .nav-list .bar {
+      display: none;
+      pointer-events: none; }
+      @media screen and (min-width: 600px) {
+        nav .nav-list .bar {
+          display: block; } }
 
 .contact {
   position: fixed;

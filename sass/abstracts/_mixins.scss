@@ -6,6 +6,30 @@
     }
 }
 
+@mixin imagewebp($bg){
+    background: {
+        image: url("../img/#{$bg}.webp");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagewebp-city($bg){
+    background: {
+        image: url("../img/city/#{$bg}.webp");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagewebp-wildlife($bg){
+    background: {
+        image: url("../img/#{$bg}.webp");
+        size: cover;
+        position: center;
+    }
+}
+
 @mixin imagepng($bg){
     background: {
         image: url("../img/#{$bg}.png");

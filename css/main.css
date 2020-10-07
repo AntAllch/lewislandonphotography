@@ -148,13 +148,15 @@ nav {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        width: 70%;
-        max-width: 400px;
-        font-size: 1.1rem; } }
+        width: 80%;
+        max-width: 660px;
+        font-size: 1.1rem;
+        letter-spacing: 2px; } }
     @media screen and (min-width: 1000px) {
       nav .nav-list {
         font-size: 1.5rem;
-        max-width: 800px; } }
+        max-width: 900px;
+        letter-spacing: 2.5px; } }
     nav .nav-list .nav-item {
       list-style: none; }
     nav .nav-list .nav-link {
@@ -363,22 +365,30 @@ nav {
   .hero .hero-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    background-image: url("/img/bride-dress.jpg");
+    background-image: url("../img/bride-dress-large.webp");
+    background-size: cover;
+    background-position: center;
     grid-area: top-left; }
   .hero .hero-2 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    background-image: url("/img/low-angle-building.jpg");
+    background-image: url("../img/low-angle-building-small.webp");
+    background-size: cover;
+    background-position: center;
     grid-area: bottom-left; }
   .hero .hero-3 {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
-    background-image: url("/img/lake-trees.jpg");
+    background-image: url("../img/lake-hut-large.webp");
+    background-size: cover;
+    background-position: center;
     grid-area: bottom-right; }
   .hero .hero-4 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
-    background-image: url("/img/reindeer-small.jpg");
+    background-image: url("../img/reindeer-small.webp");
+    background-size: cover;
+    background-position: center;
     grid-area: top-right; }
 
 .mini-desc {
@@ -491,7 +501,7 @@ nav {
           letter-spacing: 2.5px;
           margin: 15px 0 0; } }
   .most-recent .most-recent-img {
-    background-image: url("../img/grass-proposal.jpg");
+    background-image: url("../img/grass-proposal-large.webp");
     background-size: cover;
     background-position: center;
     width: 85%;
@@ -535,7 +545,7 @@ nav {
       max-width: 900px;
       margin: 200px auto; } }
   .marriage .marriage-img {
-    background-image: url("../img/couple-kiss.jpg");
+    background-image: url("../img/couple-bouquet-large.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -584,7 +594,7 @@ nav {
     letter-spacing: 1px;
     margin: 1.5em 0 3em; }
   .marriage .wedding-rings {
-    background-image: url("../img/bw-rings.jpg");
+    background-image: url("../img/bw-rings-small.webp");
     background-size: cover;
     background-position: center;
     width: 40%;
@@ -652,7 +662,7 @@ nav {
     .story {
       height: 70vh; } }
   .story .story-img {
-    background-image: url("../img/treemountain-lake.jpg");
+    background-image: url("../img/treemountain-lake-large.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -872,11 +882,46 @@ hr {
   margin: 0 0 8em; }
 
 .portfolio-set .wedding-header-img {
-  background-image: url("../img/flower-rings.jpg");
+  background-image: url("../img/flower-rings.webp");
   background-size: cover;
   background-position: center; }
 
 .portfolio-set .lion-header-img {
-  background-image: url("../img/lion-5-large.jpg");
+  background-image: url("../img/lion-5-large.webp");
   background-size: cover;
   background-position: center; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+.modal.open {
+  opacity: 1;
+  pointer-events: all; }
+
+.full-img {
+  position: absolute;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  -ms-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  border: 5px solid white; }
+
+.full-img.open {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1); }

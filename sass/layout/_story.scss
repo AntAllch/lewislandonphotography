@@ -17,7 +17,7 @@
     }
 
     .story-img{
-        @include imagejpg(treemountain-lake);
+        @include imagewebp(treemountain-lake-large);
         width: 100%;
         height: 200px;
 

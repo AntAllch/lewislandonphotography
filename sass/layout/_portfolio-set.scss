@@ -32,10 +32,10 @@
     }
 
     .wedding-header-img{
-        @include imagejpg(flower-rings);
+        @include imagewebp(flower-rings);
     }
 
     .lion-header-img{
-        @include imagejpg(lion-5-large);
+        @include imagewebp(lion-5-large);
     }
 }

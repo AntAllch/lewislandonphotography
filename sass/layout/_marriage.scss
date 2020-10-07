@@ -23,7 +23,7 @@
 
     //couple
     .marriage-img{
-        @include imagejpg(couple-kiss);
+        @include imagewebp(couple-bouquet-large);
         width: 100%;
         height: 60vh;
 
@@ -83,7 +83,7 @@
 
     //black and white wedding rings
     .wedding-rings{
-        @include imagejpg(bw-rings);
+        @include imagewebp(bw-rings-small);
         width: 40%;
         // height: 15vh;
         display: none;

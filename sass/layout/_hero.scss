@@ -35,25 +35,25 @@
     }
 
     .hero-1{
-        background-image: url("/img/bride-dress.jpg");
+        @include imagewebp(bride-dress-large);
         grid-area: top-left;
         // background-color: red;
     }
 
     .hero-2{
-        background-image: url("/img/low-angle-building.jpg");
+        @include imagewebp(low-angle-building-small);
         grid-area: bottom-left;
         // background-color: red;
     }
 
     .hero-3{
-        background-image: url("/img/lake-trees.jpg");
+        @include imagewebp(lake-hut-large);
         grid-area: bottom-right;
         // background-color: pink;
     }
 
     .hero-4{
-        background-image: url("/img/reindeer-small.jpg");
+        @include imagewebp(reindeer-small);
         grid-area: top-right;
     }
     

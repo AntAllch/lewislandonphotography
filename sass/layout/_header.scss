@@ -39,14 +39,16 @@ nav{
         @include responsive(smalldesktop){
             display: flex;
             justify-content: space-between;
-            width: 70%;
-            max-width: 400px;
+            width: 80%;
+            max-width: 660px;
             font-size: 1.1rem;
+            letter-spacing: 2px;
         }
 
         @include responsive(desktop){
             font-size: 1.5rem;
-            max-width: 800px;
+            max-width: 900px;
+            letter-spacing: 2.5px;
         }
         
         //list items - "li"

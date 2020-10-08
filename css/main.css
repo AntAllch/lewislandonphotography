@@ -22,14 +22,14 @@ html {
 .contact-email,
 .mob-nav-link,
 .mob-menu,
-nav,
 input {
   font-family: "Raleway", sans-serif; }
 
 .title,
 .subtitle,
 .contact-title,
-.contact-subtitle {
+.contact-subtitle,
+nav {
   font-family: "Playfair Display", serif; }
 
 .title {
@@ -847,7 +847,11 @@ hr {
       .portfolio .portfolio-images {
         gap: 2em; } }
     .portfolio .portfolio-images .portfolio-image-container {
-      overflow: hidden; }
+      overflow: hidden;
+      pointer-events: none; }
+      @media screen and (min-width: 600px) {
+        .portfolio .portfolio-images .portfolio-image-container {
+          pointer-events: all; } }
     .portfolio .portfolio-images .portfolio-image {
       width: 400px;
       height: 300px;
@@ -882,12 +886,17 @@ hr {
   margin: 0 0 8em; }
 
 .portfolio-set .wedding-header-img {
-  background-image: url("../img/flower-rings.webp");
+  background-image: url("../img/wedding-table.webp");
   background-size: cover;
   background-position: center; }
 
 .portfolio-set .lion-header-img {
   background-image: url("../img/lion-5-large.webp");
+  background-size: cover;
+  background-position: center; }
+
+.portfolio-set .landscape-header-img {
+  background-image: url("../img/orange-mountain.webp");
   background-size: cover;
   background-position: center; }
 
@@ -910,7 +919,7 @@ hr {
 
 .full-img {
   position: absolute;
-  height: 95%;
+  height: 41.5%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
@@ -920,6 +929,12 @@ hr {
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   border: 5px solid white; }
+  @media screen and (min-width: 1000px) {
+    .full-img {
+      height: 70%; } }
+  @media screen and (min-width: 1413px) {
+    .full-img {
+      height: 90%; } }
 
 .full-img.open {
   -webkit-transform: translate(-50%, -50%) scale(1);

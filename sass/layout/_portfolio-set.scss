@@ -32,10 +32,14 @@
     }
 
     .wedding-header-img{
-        @include imagewebp(flower-rings);
+        @include imagewebp(wedding-table);
     }
 
     .lion-header-img{
         @include imagewebp(lion-5-large);
+    }
+
+    .landscape-header-img{
+        @include imagewebp(orange-mountain)
     }
 }

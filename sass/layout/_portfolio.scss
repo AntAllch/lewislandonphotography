@@ -45,6 +45,11 @@
 
         .portfolio-image-container{
             overflow: hidden;
+            pointer-events: none;
+
+            @include responsive(smalldesktop){
+                pointer-events: all;
+            }
         }
 
         .portfolio-image{

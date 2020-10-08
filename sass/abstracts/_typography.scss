@@ -20,7 +20,7 @@
 .contact-email,
 .mob-nav-link,
 .mob-menu,
-nav,
+// nav,
 input
 {
     font-family: $ff-secondary;
@@ -29,7 +29,8 @@ input
 .title,
 .subtitle,
 .contact-title,
-.contact-subtitle{
+.contact-subtitle,
+nav{
     font-family: $ff-primary;
 }
 

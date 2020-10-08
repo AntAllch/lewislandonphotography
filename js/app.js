@@ -55,7 +55,7 @@ contactModal.addEventListener("click", (e) =>{
 //Image modal
 
 const modal = document.querySelector(".modal");
-const previews = document.querySelectorAll(".portfolio-image-container img");
+const previews = document.querySelectorAll(".modal-img img");
 const original = document.querySelector(".full-img");
 
 previews.forEach((preview) => {

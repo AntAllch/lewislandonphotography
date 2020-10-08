@@ -847,10 +847,11 @@ hr {
       .portfolio .portfolio-images {
         gap: 2em; } }
     .portfolio .portfolio-images .portfolio-image-container {
-      overflow: hidden;
+      overflow: hidden; }
+    .portfolio .portfolio-images .image-link {
       pointer-events: none; }
       @media screen and (min-width: 600px) {
-        .portfolio .portfolio-images .portfolio-image-container {
+        .portfolio .portfolio-images .image-link {
           pointer-events: all; } }
     .portfolio .portfolio-images .portfolio-image {
       width: 400px;

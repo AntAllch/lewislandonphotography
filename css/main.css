@@ -901,6 +901,11 @@ hr {
   background-size: cover;
   background-position: center; }
 
+.portfolio-set .city-header-img {
+  background-image: url("../img/city-water.webp");
+  background-size: cover;
+  background-position: center; }
+
 .modal {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;

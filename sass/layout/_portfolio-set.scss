@@ -42,4 +42,8 @@
     .landscape-header-img{
         @include imagewebp(orange-mountain)
     }
+
+    .city-header-img{
+        @include imagewebp(city-water)
+    }
 }

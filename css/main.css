@@ -396,28 +396,28 @@ nav .nav-list .bar {
   grid-area: top-left;
 }
 .hero .hero-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  background-image: url("../img/low-angle-building-small.webp");
+  background-size: cover;
+  background-position: center;
+  grid-area: top-right;
+}
+.hero .hero-3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  background-image: url("../img/low-angle-building-small.webp");
+  background-image: url("../img/lake-hut-large.webp");
   background-size: cover;
   background-position: center;
   grid-area: bottom-left;
 }
-.hero .hero-3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  background-image: url("../img/lake-hut-large.webp");
-  background-size: cover;
-  background-position: center;
-  grid-area: bottom-right;
-}
 .hero .hero-4 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   background-image: url("../img/reindeer-small.webp");
   background-size: cover;
   background-position: center;
-  grid-area: top-right;
+  grid-area: bottom-right;
 }
 
 .mini-desc {

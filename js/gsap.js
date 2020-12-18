@@ -19,10 +19,26 @@ const scene = new ScrollMagic.Scene({
     triggerHook: "onCenter",
     duration: "80%"
 })
-    .setPin(".mini-dec")
+    // .setPin(".mini-dec")
     .setTween(tl)
         .addTo(controller);
 
 function updatePercentage() {
     tl.progress();
 }
+
+// let controller = new ScrollMagic.Controller();
+
+// let timeline = new TimelineMax({onUpdate:updatePercentage});
+// timeline.from(".most-recent-img", 1, {x:-80, opacity: 0})
+// timeline.from(".most-recent-info", 1, {y:-30, opacity: 0})
+
+// let scene = new ScrollMagic.Scene({
+//     triggerElement: '.most-recent',
+//     duraction: '100%',
+//     triggerHook: 0,
+//     offset: '300'
+// })
+// .setTween()
+// .setPin('.most-recent')
+// .addTo(controller)

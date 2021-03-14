@@ -370,26 +370,26 @@ nav {
     background-position: center;
     grid-area: top-left; }
   .hero .hero-2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
     background-image: url("../img/low-angle-building-small.webp");
     background-size: cover;
     background-position: center;
-    grid-area: bottom-left; }
+    grid-area: top-right; }
   .hero .hero-3 {
     -ms-grid-row: 3;
-    -ms-grid-column: 3;
+    -ms-grid-column: 1;
     background-image: url("../img/lake-hut-large.webp");
     background-size: cover;
     background-position: center;
-    grid-area: bottom-right; }
+    grid-area: bottom-left; }
   .hero .hero-4 {
-    -ms-grid-row: 1;
+    -ms-grid-row: 3;
     -ms-grid-column: 3;
     background-image: url("../img/reindeer-small.webp");
     background-size: cover;
     background-position: center;
-    grid-area: top-right; }
+    grid-area: bottom-right; }
 
 .mini-desc {
   text-align: center;
@@ -431,7 +431,8 @@ nav {
       grid-template-columns: 75px 1fr 200px; } }
   .most-recent .grey-block {
     background-color: #F8F8F8;
-    display: none; }
+    display: none;
+    z-index: 10; }
     @media screen and (min-width: 1000px) {
       .most-recent .grey-block {
         display: block;
@@ -440,9 +441,10 @@ nav {
         grid-column: 1/2; } }
   .most-recent .most-recent-info {
     width: 85%;
-    width: 336px;
+    max-width: 336px;
     margin: 0 auto;
-    background-color: #fff; }
+    background-color: #fff;
+    z-index: 10; }
     @media screen and (min-width: 600px) {
       .most-recent .most-recent-info {
         width: 250px;

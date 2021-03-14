@@ -42,19 +42,19 @@
 
     .hero-2{
         @include imagewebp(low-angle-building-small);
-        grid-area: bottom-left;
+        grid-area: top-right;
         // background-color: red;
     }
 
     .hero-3{
         @include imagewebp(lake-hut-large);
-        grid-area: bottom-right;
+        grid-area: bottom-left;
         // background-color: pink;
     }
 
     .hero-4{
         @include imagewebp(reindeer-small);
-        grid-area: top-right;
+        grid-area:  bottom-right;
     }
     
 }

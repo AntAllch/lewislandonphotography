@@ -678,7 +678,7 @@ nav {
         width: 50%; } }
   .story .story-info {
     text-align: center;
-    padding: 2em; }
+    padding: 0 1.5em 1.5em; }
     @media screen and (min-width: 600px) {
       .story .story-info {
         width: 60%;

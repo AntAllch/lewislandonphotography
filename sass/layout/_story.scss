@@ -33,7 +33,7 @@
 
     .story-info{
         text-align: center;
-        padding: 2em;
+        padding: 0 1.5em 1.5em;
 
         @include responsive(smalldesktop){
             width: 60%;

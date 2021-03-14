@@ -33,6 +33,7 @@
 
     .story-info{
         text-align: center;
+        padding: 2em;
 
         @include responsive(smalldesktop){
             width: 60%;
@@ -67,12 +68,12 @@
         .sub-text{
             width: 90%;
             max-width: 340px;
+            margin-bottom: 0.5em;
 
             @include responsive(smalldesktop){
                 width: 90%;
                 max-width: 221px;
                 margin-bottom: 2em;
-                // line-height: 1.4;
             }
 
             @include responsive(desktop){

@@ -1,4 +1,4 @@
-# Arch Studio multi-page website  
+# Lewis Landon Photography multi-page website  
 Live site: https://antallch.github.io/lewislandonphotography/
 
 <img src="img/llp.jpg">

@@ -1,5 +1,5 @@
 .story{
-
+    position: relative;
     background-color: $light-grey;
     width: 85%;
     margin: 0 auto;
@@ -8,7 +8,6 @@
         display: flex;
         width: 100%;
         height: 50vh;
-        position: relative;
         background-color: transparent;
     }
 
@@ -18,7 +17,6 @@
 
     .story-img{
         @include imagewebp(treemountain-lake-large);
-        width: 100%;
         height: 200px;
 
         @include responsive(smalldesktop){
@@ -31,29 +29,27 @@
         }
     }
 
+    //the group of text
     .story-info{
         text-align: center;
         padding: 0 1.5em 1.5em;
 
         @include responsive(smalldesktop){
-            width: 60%;
-            height: 100%;
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            width: 60%;
+            height: 100%;
             text-align: left;
             padding-left: 15%;
         }
 
         @include responsive(desktop){
             width: 50%;
-            padding-left: 200px;
+            padding-left: 180px;
         }
 
         .title{
-            max-width: 600px;
             
             @include responsive(smalldesktop){
                 margin-bottom: 2em;
@@ -65,8 +61,7 @@
         }
 
         .sub-text{
-            width: 90%;
-            max-width: 340px;
+            width: min(90%, 340px);
             margin-bottom: 0.5em;
 
             @include responsive(smalldesktop){
@@ -81,36 +76,24 @@
             }
         }
 
-        .sub-link{
-            display: inline-block;
-            text-decoration: none;
-            font-family: $ff-secondary;
-            color: $accent;
-            letter-spacing: 1px;
-            margin: 1.5em 0;
-        }
-
     }
 
     .photographer{
-        width: 100%;
-        height: 300px;
         object-fit: cover;
         display: none;
 
         @include responsive(smalldesktop){
+            position: absolute;
+            display: block;
             width: 25%;
             height: 85%;
-            display: block;
-            position: absolute;
             top: 50%;
             left: 35%;
             transform: translate(-30%, -50%);
         }
 
         @include responsive(desktop){
-            width: 23%;
-            max-width: 300px;
+            width: min(23%, 300px);
             height: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
